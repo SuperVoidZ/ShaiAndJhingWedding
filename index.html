@@ -1,0 +1,1461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shai and Jhing Wedding</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <div class="main_frame" id="mainFrame">
+        <img id="popUp" src="image/Pop-Up.jpg">
+        <button onclick="AcceptBtn()"id="popUp_btn">Accept</button>
+        <header>
+            <nav>
+                <ul class="nav_list">
+                    <li><a onclick="scrollHome()">Home</a></li>
+                    <li><a onclick="scrollEntourage()">Entourage</a></li>
+                    <li><a onclick="scrollVenue()">Venue</a></li>
+                    <li><a onclick="scrollDetails()">Details</a></li>
+                    <li><a onclick="scrollDressCode()">DressCode</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <section id="firstPage">
+                <div class="firstPage_container">
+                    <div onclick="scrollHomeTwo()" class="firstPage_background"></div> 
+                    <iframe src="https://giphy.com/embed/dvrzYRKvhOVQfRUlxr" class="giphy-arrow"></iframe>       
+                </div>
+            </section>
+            <section id="firstPage_two">
+                <div class="firstPage_two_container">
+                    <div id="nextGif_btnTwo" class="nextGif" onclick="scrollEntourage()">
+                        <iframe src="https://giphy.com/embed/SJ5wPBMx4lLgGjOfNo" class="giphy-next"></iframe>
+                    </div>
+                    <div onclick="scrollEntourageTwo()"class="firstPage_two_background"></div>         
+                </div>
+            </section>
+            <section id="secondPage">
+                <div id="secondPage_container">
+                    <div id="nextGif_btnThree" class="nextGif" onclick="scrollVenue()">
+                        <iframe src="https://giphy.com/embed/SJ5wPBMx4lLgGjOfNo" class="giphy-next"></iframe>
+                    </div>
+                    <div  class="secondPage_content">
+                        <div onclick="scrollVenueThree()" class="pageFive_wall"></div>
+                        <div class="btn_group">
+
+                            <button id="pageOne_display" class="pageOne_btn" onclick="pageOne()"><p id="btn_pages"><i class="fa fa-home"></i></p></button>
+                            <button id="pageTwo_display" class="pageTwo_btn" onclick="pageTwo()"><p id="btn_pages">1</p></button>
+                            <button id="pageThree_display" class="pageThree_btn" onclick="pageThree()"><p id="btn_pages">2</p></button>
+                            <button id="pageFour_display" class="pageFour_btn" onclick="pageFour()"><p id="btn_pages">3</p></button>
+                            <button id="pageFive_display" class="pageFive_btn" onclick="pageFive()"><p id="btn_pages">4</p></button>
+                            <button id="pageSix_display" class="pageSix_btn" onclick="pageSix()"><p id="btn_pages">5</p></button>
+                        </div>
+                    <div>
+                </div>
+            </section>
+            <section id="thirdPage">
+                <div class="thirdPage_container">
+                    <iframe id="arrow-venue"src="https://giphy.com/embed/dvrzYRKvhOVQfRUlxr" class="giphy-arrow"></iframe>  
+                    <div onclick="scrollVenueTwo()" class="thirdPage_content"></div>
+                </div>
+            </section>
+            <section id="thirdPage_two">
+                <div class="thirdPage_two_container">
+                    <div class="venueLocation">
+                        <p class="venueTitle">Balai Katerina Resort Villa</p>
+                        <p class="venueAddress">888 P.Paterno St., Barangay Dela Paz, Binãn</p>
+                    </div>
+                    <table class="thirdPage_two_content">
+                    </table>
+                    <div id="map"></div>
+                    <img onclick="imgSliderOne()" src="image/venue.jpg" class="venueOne">
+                    <img onclick="imgSliderTwo()" src="image/venue2.jpg" class="venueTwo">
+                    <img onclick="imgSliderThree()" src="image/venue3.jpg" class="venueThree">
+                    <div class="nextGif" onclick="scrollDetailsTwo()"><iframe src="https://giphy.com/embed/SJ5wPBMx4lLgGjOfNo" class="giphy-next"></iframe></div>
+                    <div>
+                        <button onclick="imgSliderNext()" class="img_slider_next" id="img_slider_next_btn"><i class="fa fa-arrow-right"></i></button>
+                        <img class="img_slider" id="img_slider_main">
+                        <button onclick="imgSliderBack()" class="img_slider_back" id="img_slider_back_btn"><i class="fa fa-arrow-left"></i></button>
+                        <button onclick="imgSliderExit()" class="img_slider_exit" id="img_slider_exit_btn"><i class="fa fa-close"></i></button>
+                    </div>
+                </div>
+            </section>
+            <section id="fourthPage">
+                <div id="fourthPage_background" class="fourthPage_container">
+                    <div id="nextGif_btn" class="nextGif" onclick="DetailLast()">
+                        <iframe src="https://giphy.com/embed/SJ5wPBMx4lLgGjOfNo" class="giphy-next"></iframe>
+                    </div>
+                    <div onclick="DetailLast()" class="DetailLast_wall"></div>
+                    <div class="fourthPage_content"></div>
+                    <div onclick="DetailOne()" id="arrow-right-gold" class="arrow-right-golden"><iframe src="https://giphy.com/embed/ItcYaVhkaJYl7BpDEU"class="giphy-golden-arrow-right"></iframe></div>
+                    <div onclick="DetailHome()" id="arrow-left-gold" class="arrow-left-golden"><iframe src="https://giphy.com/embed/ItcYaVhkaJYl7BpDEU"class="giphy-golden-arrow-left"></iframe></div>
+                </div>
+            </section>
+            <section id="fifthPage">
+                <div onclick="scrollDressCodeOne()" class="fifthPage_container">
+                    <iframe id="arrow-dress" src="https://giphy.com/embed/dvrzYRKvhOVQfRUlxr" class="giphy-arrow"></iframe>  
+                </div>
+                <div id="fifthPageOne" onclick="scrollDressCodeTwo()" class="fifthPageOne_container">
+                    <div class="nextGif"><iframe src="https://giphy.com/embed/SJ5wPBMx4lLgGjOfNo" class="giphy-next"></iframe></div>
+                </div>
+                <div id="fifthPageTwo" onclick="scrollDressCodeThree()" class="fifthPageTwo_container">
+                    <div class="nextGif"><iframe src="https://giphy.com/embed/SJ5wPBMx4lLgGjOfNo" class="giphy-next"></iframe></div>
+                </div>
+                <div id="fifthPageThree" class="fifthPageThree_container">
+                    <div id="swipe_up" onclick="scrollHome()">
+                        <iframe src="https://giphy.com/embed/9DnJSJDc3lDN7iWCNZ" class="giphy-up"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script>(g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})
+            ({key: "AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg", v: "weekly"});</script>
+    </div>
+</body>
+<script>
+    MusicOST = new Audio('music/Pachelbel  Canon in D Best Piano Version.mp3');
+
+    function AcceptBtn() {
+        document.getElementById("popUp").style.display = "none";
+        document.getElementById("popUp_btn").style.display = "none";
+    }
+
+    let lastPage = false;
+
+    function pageOne() {
+        document.getElementById("secondPage_container").style.backgroundImage = "url('image/The Entourage Cover_page-0001.jpg')";
+        lastPage = false;
+        document.getElementById("nextGif_btnThree").style.display = "none";
+    }
+    function pageTwo() {
+        document.getElementById("secondPage_container").style.backgroundImage = "url('image/Entourage Page 1_page-0001.jpg')";
+        lastPage = false;
+        document.getElementById("nextGif_btnThree").style.display = "none";
+    }
+    function pageThree() {
+        document.getElementById("secondPage_container").style.backgroundImage = "url('image/Entourage Page 1 (Online)_page-0001.jpg')";
+        lastPage = false;
+        document.getElementById("nextGif_btnThree").style.display = "none";
+    }
+    function pageFour() {
+        document.getElementById("secondPage_container").style.backgroundImage = "url('image/Entourage Page 3_page-0001.jpg')";
+        lastPage = false;
+        document.getElementById("nextGif_btnThree").style.display = "none";
+    }
+    function pageFive() {
+        document.getElementById("secondPage_container").style.backgroundImage = "url('image/Entourage Page 4_page-0001.jpg')";
+        lastPage = false;
+        document.getElementById("nextGif_btnThree").style.display = "none";
+    }
+    function pageSix() {
+        document.getElementById("secondPage_container").style.backgroundImage = "url('image/Entourage Page 5_pages-to-jpg-0001.jpg')";
+        lastPage = true;
+        document.getElementById("nextGif_btnThree").style.display = "block";
+    }
+
+    let DetailPageTwo = false;
+
+    function DetailHome() {
+        if (DetailPageTwo === false) {
+        document.getElementById("fourthPage_background").style.backgroundImage = "url('image/Wedding Details Cover_page-0001.jpg')";
+        DetailPageOne = false;
+        document.getElementById("arrow-left-gold").style.display = "none";}
+        if (DetailPageTwo === true) {
+            document.getElementById("fourthPage_background").style.backgroundImage = "url('image/RSVP_page-0001.jpg')";
+            DetailPageTwo = false;
+            document.getElementById("arrow-right-gold").style.display = "block";
+            document.getElementById("nextGif_btn").style.display = "none";
+        }
+    }
+    function DetailOne() {
+        document.getElementById("arrow-left-gold").style.display = "block";
+        document.getElementById("fourthPage_background").style.backgroundImage = "url('image/RSVP_page-0001.jpg')";
+        DetailTwo();
+        DetailPageTwo = true;
+    }
+    function DetailTwo() {
+        if (DetailPageTwo === true) {
+        document.getElementById("fourthPage_background").style.backgroundImage = "url('image/Gifts_page-0001.jpg')";
+        document.getElementById("arrow-right-gold").style.display = "none";
+        document.getElementById("nextGif_btn").style.display = "block";
+    }}
+    function DetailLast() {
+           if (DetailPageTwo === true) {
+            document.getElementById('fifthPage').scrollIntoView();
+    }}
+
+    let venuePictureOne = false;
+    let venuePictureTwo = false;
+    let venuePictureThree = false;
+
+    function imgSliderOne() {
+        document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue.jpg')";
+        document.getElementById("img_slider_main").style.display = "block";
+        document.getElementById("img_slider_exit_btn").style.display = "block";
+        document.getElementById("img_slider_next_btn").style.display = "block";
+        document.getElementById("img_slider_back_btn").style.display = "block";
+        venuePictureOne = true;
+        venuePictureTwo = false;
+        venuePictureThree = false;
+    }
+    function imgSliderTwo() {
+        document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue2.jpg')";
+        document.getElementById("img_slider_main").style.display = "block";
+        document.getElementById("img_slider_exit_btn").style.display = "block";
+        document.getElementById("img_slider_next_btn").style.display = "block";
+        document.getElementById("img_slider_back_btn").style.display = "block";
+        venuePictureOne = false;
+        venuePictureTwo = true;
+        venuePictureThree = false;
+    }
+    function imgSliderThree() {
+        document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue3.jpg')";
+        document.getElementById("img_slider_main").style.display = "block";
+        document.getElementById("img_slider_exit_btn").style.display = "block";
+        document.getElementById("img_slider_next_btn").style.display = "block";
+        document.getElementById("img_slider_back_btn").style.display = "block";
+        venuePictureOne = false;
+        venuePictureTwo = false;
+        venuePictureThree = true;
+    }
+    function imgSliderExit() {
+        document.getElementById("img_slider_main").style.display = "none";
+        document.getElementById("img_slider_exit_btn").style.display = "none";
+        document.getElementById("img_slider_next_btn").style.display = "none";
+        document.getElementById("img_slider_back_btn").style.display = "none";
+    }
+
+    function imgSliderNext() {
+        if (venuePictureOne === true) {
+            document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue2.jpg')";
+            venuePictureOne = false;
+            venuePictureTwo = true;
+            venuePictureThree = false;
+        }
+        else if (venuePictureTwo === true) {
+            document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue3.jpg')";
+            venuePictureOne = false;
+            venuePictureTwo = false;
+            venuePictureThree = true;
+        }
+        else if (venuePictureThree === true) {
+            document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue.jpg')";
+            venuePictureOne = true;
+            venuePictureTwo = false;
+            venuePictureThree = false;
+        }        
+    }
+        
+    function imgSliderBack() {
+        if (venuePictureOne === true) {
+            document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue2.jpg')";
+            venuePictureOne = false;
+            venuePictureTwo = true;
+            venuePictureThree = false;
+        }
+        else if (venuePictureTwo === true) {
+            document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue.jpg')";
+            venuePictureOne = false;
+            venuePictureTwo = false;
+            venuePictureThree = true;
+        }
+        else if (venuePictureThree === true) {
+            document.getElementById("img_slider_main").style.backgroundImage = "url('image/venue3.jpg')";
+            venuePictureOne = true;
+            venuePictureTwo = false;
+            venuePictureThree = false;
+        }
+    }
+    
+    function scrollHome() {
+        document.getElementById('firstPage').scrollIntoView();
+    }
+    function scrollHomeTwo() {
+        document.getElementById('firstPage_two').scrollIntoView();
+        setTimeout(function() {
+            document.getElementById("nextGif_btnTwo").style.display = "block";
+        }, 2000);
+    }
+    function scrollEntourage() {
+        document.getElementById('secondPage').scrollIntoView();
+    }
+    function scrollEntourageTwo() {
+        document.getElementById('secondPage').scrollIntoView();
+    }
+    function scrollVenue() {
+        document.getElementById('thirdPage').scrollIntoView();
+    }
+    function scrollVenueTwo() {
+        document.getElementById('thirdPage_two').scrollIntoView();
+    }
+    function scrollVenueThree() {
+           if (lastPage === true) {
+            document.getElementById('thirdPage').scrollIntoView();
+    }}
+    function scrollDetails() {
+        document.getElementById('fourthPage').scrollIntoView();
+    }
+    function scrollDetailsTwo() {
+        document.getElementById('fourthPage').scrollIntoView();
+    }
+    function scrollDressCode() {
+        document.getElementById('fifthPage').scrollIntoView();
+    }
+    function scrollDressCodeOne() {
+        document.getElementById('fifthPageOne').scrollIntoView();
+    }
+    function scrollDressCodeTwo() {
+        document.getElementById('fifthPageTwo').scrollIntoView();
+    }
+    function scrollDressCodeThree() {
+        document.getElementById('fifthPageThree').scrollIntoView();
+        setTimeout(function() {
+            document.getElementById("swipe_up").style.display = "block";
+        }, 2000);
+    }
+
+    async function initMap() {
+        const position = { lat: 14.3458112, lng: 121.0844265 };
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+        map = new Map(document.getElementById("map"), {
+            zoom: 15,
+            center: position,
+            mapId: "fb44e71365d186ee",
+        });
+        const marker = new AdvancedMarkerElement({
+            map: map,
+            position: position,
+            title: "Wedding Place",
+        });
+    }
+
+    initMap();
+    MusicOST.play();
+    MusicOST.loop();
+</script>
+<style>
+
+    @keyframes header-image-animation {
+        25% { opacity: 1;}
+        85%, 100% { opacity: 0; scale: 3;}
+    }
+    
+    @keyframes fade-in {
+        from {scale: .8; opacity: 0;}
+        to {scale: 1; opacity: 1;}
+    }
+
+    @keyframes blink {
+        10%{opacity: .8;}
+        30%{opacity: .7;}
+        40%{opacity: .6;}
+        60%{opacity: .5;}
+        80%{opacity: .4;}
+        100%{opacity: .3;}
+    }
+    
+    @font-face {
+        font-family: Loving;
+        src: url('fonts/Loving.ttf');
+    }
+
+    @keyframes fade-out {
+        to { opacity: 0;}
+    }
+    
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        scroll-behavior: smooth;
+    }
+
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: rgb(87, 18, 18);
+        width: 100%;
+       
+    }
+
+    #popUp {
+        position: absolute;
+        height: 30rem;
+        width: 45rem;
+        bottom: 17rem;
+        z-index: 5;
+
+        @media (max-width: 1366px) {
+            height: 20rem;
+            width: 28rem;
+            bottom: 9rem;
+        }
+
+        @media (max-width: 414px) {
+            height: 25rem;
+            width: 25rem;
+            bottom: 20rem;
+        }
+    }
+
+    #popUp_btn {
+        background-color: gold;
+        border-radius: 50%;
+        color: darkred;
+        font-size: 2rem;
+        bottom: 23rem;
+        z-index: 7;
+        position: absolute;
+        height: 4rem;
+        width: 10rem;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+
+        @media (max-width: 1366px) {
+            bottom: 12rem;
+        }
+
+        @media (max-width: 414px) {
+            bottom: 25rem;
+        }
+    }
+
+    .main_frame::-webkit-scrollbar { 
+        display: none;
+
+    }
+
+
+    .main_frame {
+        
+        width: 200svh;
+        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 1366px) {
+            width: 215svh;
+        }
+
+        @media (max-width: 414px) {
+            width: 46svh;
+        }
+    }
+
+    header {
+        position: fixed;
+        top: 0;
+        background-color: rgba(238, 232, 170, 0.507);
+        height: 3%;
+        width: 75svh;
+        z-index: 8;
+
+        @media (max-width: 414px) {
+            width: 46svh;
+        }
+    }
+
+    .nav_list {
+        display: flex;
+        justify-content: center;
+        z-index: 9;
+    }
+
+    .nav_list li {
+        z-index: 10;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0rem;
+        font-family: Lucida Console;
+        font-weight: bold;
+        list-style-type: none;
+        font-size: 1.5rem;
+        color: rgb(126, 94, 7);
+
+        @media (max-width: 1366px) {
+            font-size: .9rem;
+        }
+
+        @media (max-width: 414px) {
+            font-size: 1.1rem;
+            margin-left: 0.25rem;
+            margin-right: 0.25rem;
+            color: rgb(92, 69, 6);
+        }
+    }
+
+    .nav_list li a{
+        cursor: pointer;
+    }
+
+    #firstPage {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .firstPage_container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 75svh;
+        justify-content: center;
+        animation: header-image-animation linear forwards;
+        animation-timeline: view();
+        animation-range: exit;
+      
+        @media (max-width: 414px) {
+            width: 50svh;
+            margin-top: 100px;
+        }
+    }
+
+    .firstPage_background {
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 75svh;
+        background-image: url('image/Invitation Cover_page-0001.jpg');
+        background-size: cover;
+        
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: -.7rem;
+        }
+    }
+
+    .giphy-arrow {
+        position: absolute;
+        bottom: 2rem;
+        right: 14rem;
+        height: 3rem;
+        border: none;
+        rotate: 90deg;
+        opacity: .5;
+        filter: contrast(200%);
+        pointer-events: none;
+
+        @media (max-width: 1366px) {
+            right:5rem;
+        }
+
+        @media (max-width: 414px) {
+            right: 5.5rem;
+            bottom: 20rem;
+        }
+    }
+
+    #firstPage_two {
+        display: flex;
+        justify-content: center;   
+    }
+
+    .firstPage_two_container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 75svh;
+        justify-content: center;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            margin-top: 100px;
+        }
+
+    }
+
+    .firstPage_two_background {
+        position: absolute;
+        top: 0; left: 0;
+        height: 100%;
+        width: 75svh;
+        background-image: url('image/Invitation Page 2_page-0001.jpg');
+        background-size: cover;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: -.7rem;
+        }
+    }
+
+
+    #secondPage_container {
+        background-image: url('image/The Entourage Cover_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        position: relative;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+        }
+     
+    }
+
+    #nextGif_btnTwo {
+        display: none;
+
+        @media (max-width: 414px) {
+            bottom: 18rem;
+        }
+    }
+
+    .btn_group {
+        display: flex;
+        align-items: end;
+        width: 100%;
+        justify-content: center;
+    }
+
+    #btn_pages {
+        @media (max-width: 1366px) {
+            top: -.5rem;
+            left: 0.5rem;
+            position: absolute;
+        }
+    }
+
+    .pageOne_btn {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem;
+        animation-name: blink;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+
+        @media (max-width: 1366px) {
+            height: 2.5rem;
+            margin: 1rem;
+            position: relative;
+        }
+    }
+    .pageTwo_btn {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem;
+        animation-name: blink;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+
+        @media (max-width: 1366px) {
+            height: 2.5rem;
+            margin: 1rem;
+            position: relative;
+        }
+    }
+    .pageThree_btn {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem;
+        animation-name: blink;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 2s;
+
+        @media (max-width: 1366px) {
+            height: 2.5rem;
+            margin: 1rem;
+            position: relative;
+        }
+    }
+    .pageFour_btn {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem;
+        animation-name: blink;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+
+        @media (max-width: 1366px) {
+            height: 2.5rem;
+            margin: 1rem;
+            position: relative;
+        }
+    }
+    .pageFive_btn {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem;
+        animation-name: blink;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 4s;
+        z-index: 10;
+
+        @media (max-width: 1366px) {
+            height: 2.5rem;
+            margin: 1rem;
+            position: relative;
+        }
+    }
+
+    .pageSix_btn {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 2rem;
+        cursor: pointer;
+        margin: 2rem;
+        animation-name: blink;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-delay: 5s;
+        z-index: 10;
+
+        @media (max-width: 1366px) {
+            height: 2.5rem;
+            margin: 1rem;
+            position: relative;
+        }
+    }
+
+    .pageFive_wall {
+        position: absolute;
+        height: 85%;
+        width: 100%;
+    }
+
+    #nextGif_btnThree {
+        bottom: 8rem;
+        display: none;
+
+        @media (max-width: 1366px) {
+            bottom: 5rem;
+        }
+    }
+
+
+    .thirdPage_container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/The Venue Cover_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+            position: relative;
+        }
+    }
+
+    #arrow-venue {
+        @media (max-width: 414px) {
+            bottom: 3rem;
+            left: 5rem;
+            
+        }
+    }
+
+    .thirdPage_two_container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/The Venue Cover_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+            position: relative;
+        }
+
+    }
+
+    #map {
+        position: absolute;
+        height: 20rem;
+        width: 30rem;
+        top: 3rem;
+        left: 9rem;
+        justify-content: center;
+        z-index: 4;
+        box-shadow:0 0 2px #fff,
+                    0 0 11px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20),
+                    0 0 25px rgb(212, 177, 20),
+                    0 0 35px rgb(212, 177, 20);
+        @media (max-width: 1366px) {
+            top: 4rem;
+            width: 20rem;
+            height: 12rem;
+            left: 5rem;
+        }
+
+        @media (max-width: 414px) {
+            top: 2rem;
+            width: 21rem;
+            height: 13rem;
+            left: 4.3rem;
+        }
+    }
+
+    .gmnoprint {
+        display: none;
+    }
+
+    [title="Report errors in the road map or imagery to Google"] {
+        display: none;
+    }
+
+    .venueLocation {
+        height: 13rem;
+        width: 15rem;
+        position: absolute;
+        bottom: 24rem;
+        right: 2rem;
+        background: rgba(194, 161, 16, 0.836);
+        display: flex;
+        flex-direction: column;
+        opacity: .95;
+        border-radius: 10%;
+
+        @media (max-width: 1366px) {
+            height: 8rem;
+            width: 10rem;
+            bottom: 15rem;
+            right: 1rem;
+        }
+
+        @media (max-width: 414px) {
+            bottom: 18rem;
+            height: 9rem;
+            width: 11rem;
+            right: 1.5rem;
+        }
+    }
+
+    .venueTitle {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: darkred;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        opacity: 1;
+
+        @media (max-width: 1366px) {
+            font-size: 1rem;
+            margin-left: .5rem;
+            margin-top: .5rem;
+        }
+
+        @media (max-width: 414px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    .venueAddress {
+        margin: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        opacity: 1;
+
+        @media (max-width: 1366px) {
+            margin: .5rem;
+            font-size: .75rem;
+            margin-bottom: 1rem;
+        }
+        @media (max-width: 414px) {
+            font-size: 0.9rem;
+        }
+    }
+
+    .venueOne {
+        height: 12.5rem;
+        width: 20rem;
+        position: absolute;
+        bottom: 3rem;
+        left: 2rem;
+        z-index: 4;
+        rotate: 10deg;
+        box-shadow:0 0 2px #fff,
+                    0 0 11px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20);
+        cursor: pointer;
+
+        @media (max-width: 1366px) {
+            height: 8rem;
+            width: 12rem;
+            left: 2rem;
+            bottom: 2rem;
+        }
+
+        @media (max-width: 414px) {
+            left: 3rem;
+        }
+        
+    }
+    .venueTwo {
+        height: 12.5rem;
+        width: 20rem;
+        position: absolute;
+        bottom: 8rem;
+        right: 2rem;
+        z-index: 4;
+        rotate: -10deg;
+        box-shadow:0 0 2px #fff,
+                    0 0 11px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20);
+        cursor: pointer;
+
+        
+
+        @media (max-width: 1366px) {
+            height: 8rem;
+            width: 12rem;
+            right: 2rem;
+            bottom: 5rem;
+        }
+
+        @media (max-width: 414px) {
+            bottom: 8rem;
+        }
+    }
+    .venueThree {
+        height: 15rem;
+        width: 23rem;
+        position: absolute;
+        bottom: 22rem;
+        left: 5rem;
+        z-index: 4;
+        box-shadow:0 0 2px #fff,
+                    0 0 11px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20),
+                    0 0 21px rgb(212, 177, 20);
+        cursor: pointer;
+
+        
+
+        @media (max-width: 1366px) {
+            height: 9rem;
+            width: 13rem;
+            left: 3rem;
+            bottom: 13rem;
+        }
+
+        @media (max-width: 414px) {
+            bottom: 16rem;
+            height: 11rem;
+            width: 15rem;
+            left: 2rem;
+        }
+    }
+
+    .img_slider {
+        height: 30rem;
+        width: 45rem;
+        position: absolute;
+        bottom: 17rem;
+        left: 1.5rem;
+        z-index: 5;
+        display: none;
+        background-size: cover;
+
+        @media (max-width: 1366px) {
+            height: 20rem;
+            width: 28rem;
+            bottom: 9rem;
+            left: 1rem;
+        }
+
+        @media (max-width: 414px) {
+            width: 26rem;
+            height: 18rem;
+            left: 2rem;
+        }
+    }
+    .img_slider_exit:active{
+        opacity: .5;
+    }
+    .img_slider_back:active{
+        opacity: .5;
+    }
+    .img_slider_next:active{
+        opacity: .5;
+    }
+    .img_slider_exit {
+        height: 3rem;
+        width: 3rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        color: rgb(250, 247, 221);
+        font-size: 3rem;
+        cursor: pointer;
+        opacity: 0.75;
+        right: 2rem;
+        top: 17.5rem;
+        position: absolute;
+        z-index: 7;
+        display: none;
+
+        @media (max-width: 1366px) {
+            top: 11rem;
+            height: 2.5rem;
+            width: 2.5rem;
+            font-size: 2rem;
+            right: 1rem;
+        }
+
+        @media (max-width: 414px) {
+            top: 16rem;
+            right: 1.3rem;
+        
+        }
+    }
+
+    [class="fa fa-close"] {
+        position: absolute;
+        top: -.4rem;
+        right: .1rem;
+
+        @media (max-width: 1366px) {
+            top: -.1rem;
+            right: .2rem;
+        }
+    }
+    [class="fa fa-arrow-right"] {
+        position: absolute;
+        top: 0rem;
+        right: .4rem;
+
+        @media (max-width: 1366px) {
+            top: .1rem;
+        }
+    }
+    [class="fa fa-arrow-left"] {
+        position: absolute;
+        top: 0rem;
+        right: .5rem;
+
+        @media (max-width: 1366px) {
+            top: .1rem;
+        }
+    }
+
+
+    .img_slider_next {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 3rem;
+        cursor: pointer;
+        opacity: 0.75;
+        right: 1rem;
+        top: 30rem;
+        position: absolute;
+        z-index: 7;
+        display: none;
+
+        @media (max-width: 1366px) {
+            top: 20rem;
+            height: 3rem;
+            width: 3rem;
+            right: .5rem;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 414px) {
+            top: 25rem;
+            right: 1.3rem;
+        }
+    }
+
+    .img_slider_back {
+        height: 4rem;
+        width: 4rem;
+        border: .3rem solid rgb(206, 174, 87);
+        border-radius: 10%;
+        background: rgb(128, 16, 34);
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: rgb(250, 247, 221);
+        font-size: 3rem;
+        cursor: pointer;
+        opacity: 0.75;
+        left: 1.2rem;
+        top: 30rem;
+        position: absolute;
+        z-index: 7;
+        display: none;
+
+        @media (max-width: 1366px) {
+            top: 20rem;
+            height: 3rem;
+            width: 3rem;
+            left: .5rem;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 414px) {
+            top: 25rem;
+            left: 1.3rem;
+        }
+    }
+
+    .giphy-next {
+        position: absolute;
+        height: 15rem;
+        right: -5rem;
+        bottom: -6rem;
+        pointer-events: none;
+        border: none;
+
+        @media (max-width: 1366px) {
+            height: 5rem;
+            right: -8rem;
+            bottom: -1rem;
+        }
+
+    }
+
+    .nextGif {
+        position: absolute;
+        height: 5rem;
+        width: 12rem;
+        right: 3rem;
+        bottom: 0rem;
+        z-index: 20;
+        pointer-events: auto;
+        cursor: pointer;
+
+        @media (max-width: 1366px) {
+            height: 3rem;
+            width: 6rem;
+        }
+
+    }
+
+    #nextGif_btn {
+        display: none;
+    }
+
+    #fourthPage {
+        display: flex;
+        justify-content: center;
+        animation: fade-in linear forwards, AnimationName 30s ease infinite;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: -.7rem;
+            top: 7.5rem;
+            position: relative;
+        }
+    }
+
+    .fourthPage_container {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        background-image: url('image/Wedding Details Cover_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+
+    }
+
+    .giphy-golden-arrow-right {
+        position: absolute;
+        height: 15rem;
+        right: -5rem;
+        bottom: -6rem;
+        rotate: -90deg;
+        border: none;
+        pointer-events: none;
+
+        @media (max-width: 1366px) {
+            height: 11rem;
+            bottom: -4.5rem;
+
+        }
+
+    }
+    .giphy-golden-arrow-left {
+        position: absolute;
+        height: 15rem;
+        left: -5rem;
+        bottom: -6rem;
+        rotate: 90deg;
+        pointer-events: none;
+        border: none;
+
+        @media (max-width: 1366px) {
+            height: 11rem;
+            bottom: -4.5rem;
+
+        }
+
+    }
+
+    .arrow-left-golden {
+        position: absolute;
+        height: 5rem;
+        width: 12rem;
+        left: 3rem;
+        bottom: 4rem;
+        display: none;
+        z-index: 20;
+        pointer-events: auto;
+        cursor: pointer;
+
+        @media (max-width: 1366px) {
+            height: 3rem;
+            width: 8rem;
+            bottom: 2rem;
+        }
+
+    }
+
+    .arrow-right-golden {
+        position: absolute;
+        height: 5rem;
+        width: 12rem;
+        right: 3rem;
+        bottom: 4rem;
+        z-index: 20;
+        pointer-events: auto;
+        cursor: pointer;
+
+        @media (max-width: 1366px) {
+            height: 3rem;
+            width: 8rem;
+            bottom: 2rem;
+        }
+    }
+
+    .DetailLast_wall {
+        position: absolute;
+        height: 85%;
+        width: 100%;
+    }
+    #arrow-dress{
+        @media (max-width: 414px) {
+            bottom:3rem;
+            left: 5rem;
+        }
+    }
+    .fifthPage_container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/Dresscode Cover_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        position: relative;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+            position: relative;
+            margin-top: 200px;
+        }
+        
+    }
+    .fifthPageOne_container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/Dresscode Page 1_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        position: relative;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+            position: relative;
+            margin-top: 200px;
+        }
+        
+    }
+    .fifthPageTwo_container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/Dresscode Page 2_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        position: relative;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+            position: relative;
+            margin-top: 200px;
+        }
+
+    }
+    .fifthPageThree_container {
+        display: flex;
+        flex-direction: column;
+        background-image: url('image/Dresscode Page 3_page-0001.jpg');
+        background-size: cover;
+        width: 75svh;
+        background-position: 50% 0;
+        position: relative;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+        animation-range-start: cover;
+        animation-range-end: contain -50px;
+
+        @media (max-width: 414px) {
+            width: 50svh;
+            height: 650px;
+            left: 0rem;
+            top: 7.5rem;
+            position: relative;
+            margin-top: 200px;
+        }
+
+    }
+
+    .giphy-up {
+        position: absolute;
+        height: 15rem;
+        left: -5rem;
+        top: -5rem;
+        pointer-events: none;
+        border: none;
+        
+        @media (max-width: 1366px) {
+            height: 8rem;
+            top: -1rem;
+        }
+    }
+
+    #swipe_up {
+        position: absolute;
+        height: 5rem;
+        width: 12rem;
+        right: 3rem;
+        bottom: 4rem;
+        z-index: 20;
+        pointer-events: auto;
+        cursor: pointer;
+        display: none;
+
+        @media (max-width: 1366px) {
+            bottom: 2rem;
+        }
+    }
+
+</style>
+</html>
